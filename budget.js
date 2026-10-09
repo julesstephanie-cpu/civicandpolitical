@@ -63,7 +63,7 @@
       var max = Number(el.max) || 100;
       var val = Number(el.value) || 0;
       var pct = max === min ? 0 : ((val - min) / (max - min)) * 100;
-      el.style.background = "linear-gradient(to right, var(--accent, #1a5cff) 0%, var(--accent, #1a5cff) " + pct + "%, var(--border) " + pct + "%, var(--border) 100%)";
+      el.style.background = "linear-gradient(to right, var(--accent) 0%, var(--accent) " + pct + "%, var(--border) " + pct + "%, var(--border) 100%)";
     }
     function orgRender() {
       var ed = parseInt(orgEd.value, 10) || 0;
@@ -149,7 +149,7 @@
       var max = Number(el.max) || 100;
       var val = Number(el.value) || 0;
       var pct = max === min ? 0 : ((val - min) / (max - min)) * 100;
-      el.style.background = "linear-gradient(to right, var(--accent, #1a5cff) 0%, var(--accent, #1a5cff) " + pct + "%, var(--border) " + pct + "%, var(--border) 100%)";
+      el.style.background = "linear-gradient(to right, var(--accent) 0%, var(--accent) " + pct + "%, var(--border) " + pct + "%, var(--border) 100%)";
     }
     function orgnRender() {
       var stateIdx = parseInt(orgnEd.value, 10) || 0;
